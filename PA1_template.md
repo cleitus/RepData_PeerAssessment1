@@ -1,4 +1,9 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output:
+  html_document:
+    keep_md: true
+---
 
 ##Loading and preprocessing the data
 
@@ -22,7 +27,7 @@ qplot(steps, data=steps_per_day, geom="histogram")
 ## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
 
 ####Calculate and report the mean and median total number of steps taken per day
 
@@ -46,7 +51,7 @@ p <- ggplot(steps_mean_per_interval, aes(x=interval, y=steps))
 p + geom_line()
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
 
 ####Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -110,7 +115,7 @@ p + geom_histogram(data=subset(steps_compar,Data == "Imputed"),fill = "red", alp
 ## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png) 
+![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png) 
 
 
 ```r
@@ -186,6 +191,6 @@ multiplot(p1, p2)
 ## Loading required package: grid
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-10-1.png) 
+![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png) 
 
 The highest peak is during weekdays somewhere in the day, but overall, there's more activity on weekends.
