@@ -1,8 +1,8 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
-output:
-  html_document:
-    keep_md: true
+title: "Reproducible research pass1"
+author: "Christian Nader"
+date: "Sunday, December 14, 2014"
+output: html_document
 ---
 
 ##Loading and preprocessing the data
